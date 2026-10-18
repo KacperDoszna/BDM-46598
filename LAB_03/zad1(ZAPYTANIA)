@@ -1,0 +1,50 @@
+SELECT nazwa, cena FROM produkty
+WHERE cena > 200 
+ORDER BY cena DESC;
+
+SELECT imie, nazwisko, miasto FROM klienci
+WHERE miasto IN ('Wroclaw', 'Poznan');
+
+SELECT nazwa, cena FROM produkty
+ORDER BY cena ASC LIMIT 10;
+
+SELECT * FROM zamowienia
+WHERE status = 'anulowane'
+ORDER BY data_zamowienia DESC;
+
+SELECT * FROM produkty
+WHERE nazwa LIKE 'P%';
+
+SELECT * FROM produkty
+WHERE ilosc_magazyn < 5;
+
+SELECT * FROM klienci
+WHERE data_rejestracji > CURRENT_DATE - INTERVAL '500 days';
+
+SELECT nazwa, cena FROM produkty
+ORDER BY cena DESC LIMIT 5;
+
+SELECT nazwa, cena FROM produkty
+ORDER BY cena ASC LIMIT 5;
+
+SELECT * FROM produkty
+WHERE data_dodania >= CURRENT_DATE - INTERVAL '30 days';
+
+SELECT DISTINCT miasto FROM klienci;
+
+SELECT nazwisko, UPPER(nazwisko) AS nazwisko_duze FROM klienci;
+
+SELECT * FROM produkty
+WHERE ROUND(cena) BETWEEN 90 AND 110;
+
+SELECT * FROM klienci
+WHERE imie LIKE 'A%' OR nazwisko LIKE 'ski%';
+
+SELECT * FROM zamowienia
+ORDER BY data_zamowienia ASC LIMIT 5;
+
+SELECT * FROM produkty
+WHERE cena NOT BETWEEN 100 AND 300;
+
+SELECT nazwa, CURRENT_DATE - data_dodania AS dni_od_dodania FROM produkty
+ORDER BY dni_od_dodania DESC;
