@@ -1,5 +1,5 @@
 <h3>Opis</h3>
-<br>Moje rozszerzenie bazy sklepu dotyczy programu lojalnościowego, w którym 
+    Moje rozszerzenie bazy sklepu dotyczy programu lojalnościowego, w którym 
 klienci mogą zbierać punkty za zakupy i wymieniać je na różne nagrody. 
 Każdy klient ma swój profil z liczbą punktów, a dzięki tabeli wymiany punktów 
 można zapisać, jakie nagrody zostały wybrane przez klientów. 
